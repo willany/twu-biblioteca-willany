@@ -5,18 +5,18 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class WelcomeTest {
+public class MessagesTest {
 
-    Welcome welcome;
+    Messages message;
 
     @Before
     public void setUp() {
-        welcome = new Welcome();
+        message = new Messages();
 
     }
 
     @Test
     public void WelcomeMessageTest(){
-        assertEquals("Welcome to the TWUs library!", welcome.showWelcomeMessage());
+        assertEquals("Welcome to the TWU's library!", message.showWelcomeMessage());
     }
 }

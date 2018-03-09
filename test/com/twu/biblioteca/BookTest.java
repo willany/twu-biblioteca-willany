@@ -16,16 +16,17 @@ public class BookTest {
 
     @Before
     public void setUp() {
+        books.populateBook();
         books_list.add(new Book("All about Love", "Bell Hooks", 2000));
         books_list.add(new Book("Geek Love", "Katherine Dunn", 1989));
-        books_list.add(new Book("The Handmaid's Tale", "Margaret Atwood", 1985));
+        books_list.add(new Book("Infinite Jest", "Margaret Atwood", 1985));
     }
 
     @Test
     public void listBooksTest(){
-      assertThat(books.listAll(), hasItems(new Book("All about Love", "Bell Hooks", 2000),
-        new Book("Geek Love", "Katherine Dunn", 1989),
-        new Book("The Handmaid's Tale", "Margaret Atwood", 1985)));
+        assertThat(books.listAll(), hasItems(new Book("All about Love", "Bell Hooks", 2000),
+            new Book("Geek Love", "Katherine Dunn", 1989),
+            new Book("The Handmaid's Tale", "David Foster", 1985)));
 
 
     }
