@@ -22,22 +22,46 @@ public class BookManagementTest {
         listbooksTest = new ArrayList<>();
         bookOne = new Book("test name", "test author", 2018);
         bookTwo = new Book("test name", "test author", 2017);
+        bookManagement.add(bookOne);
     }
 
     @Test
     public void addNewBookTest(){
-        bookManagement.add(bookOne);
         listbooksTest.add(bookOne);
-        assertEquals(new HashSet<>(bookManagement.books), new HashSet<>(listbooksTest));
+        assertEquals(new HashSet<>(bookManagement.getBookList()), new HashSet<>(listbooksTest));
 
         listbooksTest.remove(bookOne);
         listbooksTest.add(bookTwo);
-        assertNotEquals(new HashSet<>(bookManagement.books), new HashSet<>(listbooksTest));
+        assertNotEquals(new HashSet<>(bookManagement.getBookList()), new HashSet<>(listbooksTest));
     }
 
     @Test
-    public void listBooksTest(){
-//        assertEquals(bookManagement.printBooks(), );
+    public void listTest(){
+        assertEquals(1, bookManagement.getBookList().size());
     }
+
+    @Test
+    public void columnHeadingsTest(){
+        assertEquals("Title                Author               Year Published       \n", bookManagement.columnHeadings());
+    }
+
+    @Test
+    public void printBooksTest(){
+        assertEquals("test name            test author          2018                 \n", bookManagement.printBooks());
+    }
+
+    @Test
+    public void checkoutBookTest(){
+        assertEquals("Thank you! Enjoy the book.", bookManagement.checkoutBook(bookOne.getName()));
+        assertEquals("That book is not available.", bookManagement.checkoutBook(bookOne.getName()));
+    }
+
+    @Test
+    public void returnBookTest(){
+        assertEquals("Thank you! Enjoy the book.", bookManagement.checkoutBook(bookOne.getName()));
+        assertEquals("Thank you for returning the book.", bookManagement.checkinBook(bookOne.getName()));
+        assertEquals("That is not a valid book to return.", bookManagement.checkinBook(bookOne.getName()));
+    }
+
 
 }

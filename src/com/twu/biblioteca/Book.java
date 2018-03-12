@@ -1,17 +1,11 @@
 package com.twu.biblioteca;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.TreeSet;
-
 public class Book {
 
-    private int code;
     private String name;
     private String author;
     private int year_published;
-    private boolean available;
+    private boolean available = true;
 
     public Book(String name, String author, int year_published) {
         this.name = name;
@@ -43,6 +37,16 @@ public class Book {
         this.year_published = year_published;
     }
 
+    public boolean isAvailable() {
+        return available;
+    }
 
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+    public String details() {
+        return String.format("%-20s %-20s %-20s %n", name, author, year_published);
+    }
 
 }

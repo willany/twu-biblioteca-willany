@@ -1,43 +1,21 @@
 package com.twu.biblioteca;
 
+import java.util.ArrayList;
+
 public class Menu {
-    private int code;
-    private String name;
-    private String function;
 
-    public Menu(int code, String name, String function){
-        this.code = code;
-        this.name = name;
-        this.function = function;
+    private ArrayList<String> menuList = new ArrayList<>();
+
+
+    public void add(String menuItem){
+        menuList.add(menuItem);
     }
 
-    public Menu(){}
-
-    public int getCode() {
-        return code;
+    public String menuList(){
+       String menuOptions = String.join("\n", menuList);
+       return menuOptions;
     }
 
-    public void setCode(int code) {
-        this.code = code;
-    }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getFunction() {
-        return function;
-    }
-
-    public void setFunction(String function) {
-        this.function = function;
-    }
-
-    public String toString() {
-        return this.name + ": " + this.code;
-    }
 }

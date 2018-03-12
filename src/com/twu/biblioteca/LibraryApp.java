@@ -3,16 +3,17 @@ package com.twu.biblioteca;
 public class LibraryApp {
 
     public static void main(String[] args) {
-
-        Messages message = new Messages();
-        System .out.println(message.showWelcomeMessage());
-
-        System.out.println("----------------------------------------\n");
+        Menu menuOptions = new Menu();
+        menuOptions.add("List Books");
+        menuOptions.add("Checkout Book");
+        menuOptions.add("Return Book");
 
         BookManagement bookManagement = new BookManagement();
-        bookManagement.add(new Book("teste", "teste", 1991));
+        bookManagement.add(new Book("test", "test", 1991));
 
-        bookManagement.listAll();
+        Panel panel = new Panel(bookManagement, menuOptions);
+
+        panel.libraryStart();
 
 
     }

@@ -29,4 +29,9 @@ public class BookTest {
         assertEquals(2000, book_one.getYear_published());
     }
 
+    @Test
+    public void getDetailsTest(){
+        assertEquals("All about Love       Bell Hooks           2000                 \n", book_one.details());
+    }
+
 }
