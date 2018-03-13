@@ -16,7 +16,7 @@ public class MovieTest {
 
     @Test
     public void validateMovieDetailsShouldHaveName(){
-        assertEquals("Um amor para recodar", movie.getname());
+        assertEquals("Um amor para recordar", movie.getName());
     }
 
     @Test
