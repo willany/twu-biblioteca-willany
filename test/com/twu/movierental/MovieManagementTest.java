@@ -24,5 +24,7 @@ public class MovieManagementTest {
     @Test
     public void validateListOfAvailableMovies(){
         assertEquals(2, movieManagement.listAvailableMovies().size());
+        movie.setAvailable(false);
+        assertEquals(1, movieManagement.listAvailableMovies().size());
     }
 }
