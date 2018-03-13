@@ -23,10 +23,14 @@ public class BookManagement {
         if (getAvailableBook().isEmpty()){
             System.out.println("No books available!");
         }else {
-            System.out.println("List of the books \n");
-            System.out.println(columnHeadings());
-            System.out.println(printBooks());
+            printAllBooks();
         }
+    }
+
+    public void printAllBooks(){
+        System.out.println("List of the books \n");
+        System.out.println(columnHeadings());
+        System.out.println(printBooks());
     }
 
     public String columnHeadings() {
@@ -65,15 +69,13 @@ public class BookManagement {
     }
 
     public Boolean changeBookStatus(String bookName, Boolean status){
-        Boolean result;
         Book book = getBookByName(getBookList(), bookName);
         if(book != null) {
             book.setAvailable(status);
-            result = true;
+            return true;
         }else{
-            result = false;
+            return false;
         }
-        return result;
     }
 
     private static Book getBookByName(List<Book> books, String name) {
