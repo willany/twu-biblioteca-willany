@@ -1,14 +1,11 @@
 package com.twu.biblioteca;
 
-import java.util.List;
-import java.util.TreeSet;
-
 public class Book {
 
-    private int code;
     private String name;
     private String author;
     private int year_published;
+    private boolean available = true;
 
     public Book(String name, String author, int year_published) {
         this.name = name;
@@ -40,32 +37,16 @@ public class Book {
         this.year_published = year_published;
     }
 
-    public String toString() {
-        return this.name + "\t" + this.author + "\t" + this.year_published;
+    public boolean isAvailable() {
+        return available;
     }
 
-
-    //Test equal, override equals() and hashCode()
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-        if (!Book.class.isAssignableFrom(obj.getClass())) {
-            return false;
-        }
-        final Book other = (Book) obj;
-        if ((this.name == null) ? (other.name != null) : !this.name.equals(other.name)) {
-            return false;
-        }
-        if (this.author != other.author) {
-            return false;
-        }
-        if (this.year_published != other.year_published) {
-            return false;
-        }
-        return true;
+    public void setAvailable(boolean available) {
+        this.available = available;
     }
 
+    public String details() {
+        return String.format("%-20s %-20s %-20s %n", name, author, year_published);
+    }
 
 }

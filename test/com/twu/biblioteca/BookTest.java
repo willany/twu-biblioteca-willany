@@ -3,31 +3,35 @@ package com.twu.biblioteca;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-
-import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 public class BookTest {
 
-    Books books;
-    ArrayList<Book> books_list = new ArrayList<>();
+    Book book_one;
 
     @Before
     public void setUp() {
-        books.populateBook();
-        books_list.add(new Book("All about Love", "Bell Hooks", 2000));
-        books_list.add(new Book("Geek Love", "Katherine Dunn", 1989));
-        books_list.add(new Book("Infinite Jest", "Margaret Atwood", 1985));
+        book_one = new Book("All about Love", "Bell Hooks", 2000);
     }
 
     @Test
-    public void listBooksTest(){
-        assertThat(books.listAll(), hasItems(new Book("All about Love", "Bell Hooks", 2000),
-            new Book("Geek Love", "Katherine Dunn", 1989),
-            new Book("The Handmaid's Tale", "David Foster", 1985)));
-
-
+    public void getNameTest(){
+        assertEquals("All about Love", book_one.getName());
     }
+
+    @Test
+    public void getAuthorTest(){
+        assertEquals("Bell Hooks", book_one.getAuthor());
+    }
+
+    @Test
+    public void getYearPublishedTest(){
+        assertEquals(2000, book_one.getYear_published());
+    }
+
+    @Test
+    public void getDetailsTest(){
+        assertEquals("All about Love       Bell Hooks           2000                 \n", book_one.details());
+    }
+
 }
