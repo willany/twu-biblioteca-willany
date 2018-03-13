@@ -3,6 +3,8 @@ package com.twu.movierental;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 public class MovieTest {
@@ -10,28 +12,29 @@ public class MovieTest {
     Movie movie;
     Movie movieWithoutRating;
 
+
     @Before
     public void setUp() {
         movie = new Movie("Um amor para recordar", 2000, "Nicholas Sparks", 10);
-        movieWithoutRating = new Movie("Um amor para recordar", 2000, "Nicholas Sparks");
+        movieWithoutRating = new Movie("Ela é o cara", 2018, "Steven Robbins");
     }
 
     @Test
     public void validateMovieDetailsShouldHaveName(){
         assertEquals("Um amor para recordar", movie.getName());
-        assertEquals("Um amor para recordar", movieWithoutRating.getName());
+        assertEquals("Ela é o cara", movieWithoutRating.getName());
     }
 
     @Test
     public void validateMovieDetailsShouldHaveYear(){
         assertEquals(2000, movie.getYear());
-        assertEquals(2000, movieWithoutRating.getYear());
+        assertEquals(2018, movieWithoutRating.getYear());
     }
 
     @Test
     public void validateMovieDetailsShouldHaveDirector(){
         assertEquals("Nicholas Sparks", movie.getDirector());
-        assertEquals("Nicholas Sparks", movieWithoutRating.getDirector());
+        assertEquals("Steven Robbins", movieWithoutRating.getDirector());
     }
 
     @Test
@@ -39,4 +42,6 @@ public class MovieTest {
         assertEquals(10, movie.getRating());
         assertEquals(0, movieWithoutRating.getRating());
     }
+
+
 }
