@@ -55,7 +55,7 @@ public class Panel {
             case "Return Book":
                 System.out.println("Please, write the book's title: ");
                 String bookToBeCheckedIn = returnUserOption();
-                System.out.println(bookManagement.checkinBook(bookToBeCheckedIn));
+                System.out.println(bookManagement.checkInBook(bookToBeCheckedIn));
                 break;
             case "Quit":
                 return;

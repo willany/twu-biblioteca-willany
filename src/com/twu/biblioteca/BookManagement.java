@@ -43,16 +43,16 @@ public class BookManagement {
 
     public String checkoutBook(String bookName) {
         if(isAvailable(bookName)) {
-            setUnavailableBook(bookName);
+            changeBookStatus(bookName, false);
             return "Thank you! Enjoy the book.";
         }else {
             return "That book is not available.";
         }
     }
 
-    public String checkinBook(String bookName) {
+    public String checkInBook(String bookName) {
         if(!isAvailable(bookName)) {
-            setAvailableBook(bookName);
+            changeBookStatus(bookName, true);
             return "Thank you for returning the book.";
         }else {
             return "That is not a valid book to return.";
@@ -64,14 +64,16 @@ public class BookManagement {
         return book.isAvailable();
     }
 
-    public void setUnavailableBook(String name){
-        Book book = getBookByName(getBookList(), name);
-        book.setAvailable(false);
-    }
-
-    public void setAvailableBook(String name){
-        Book book = getBookByName(getBookList(), name);
-        book.setAvailable(true);
+    public Boolean changeBookStatus(String bookName, Boolean status){
+        Boolean result;
+        Book book = getBookByName(getBookList(), bookName);
+        if(book != null) {
+            book.setAvailable(status);
+            result = true;
+        }else{
+            result = false;
+        }
+        return result;
     }
 
     private static Book getBookByName(List<Book> books, String name) {

@@ -51,6 +51,12 @@ public class BookManagementTest {
     }
 
     @Test
+    public void changeBookStatusTest(){
+        assertEquals(true, bookManagement.changeBookStatus(bookOne.getName(), false));
+        assertEquals(false, bookManagement.isAvailable(bookOne.getName()));
+    }
+
+    @Test
     public void checkoutBookTest(){
         assertEquals("Thank you! Enjoy the book.", bookManagement.checkoutBook(bookOne.getName()));
         assertEquals("That book is not available.", bookManagement.checkoutBook(bookOne.getName()));
@@ -59,8 +65,8 @@ public class BookManagementTest {
     @Test
     public void returnBookTest(){
         assertEquals("Thank you! Enjoy the book.", bookManagement.checkoutBook(bookOne.getName()));
-        assertEquals("Thank you for returning the book.", bookManagement.checkinBook(bookOne.getName()));
-        assertEquals("That is not a valid book to return.", bookManagement.checkinBook(bookOne.getName()));
+        assertEquals("Thank you for returning the book.", bookManagement.checkInBook(bookOne.getName()));
+        assertEquals("That is not a valid book to return.", bookManagement.checkInBook(bookOne.getName()));
     }
 
 
