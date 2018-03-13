@@ -5,6 +5,7 @@ public class Movie {
     private int year;
     private String director;
     private int rating;
+    private Boolean available = true;
 
     public Movie(String name, int year, String director, int rating){
         this.name = name;
@@ -48,5 +49,13 @@ public class Movie {
 
     public void setRating(int rating) {
         this.rating = rating;
+    }
+
+    public Boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(Boolean available) {
+        this.available = available;
     }
 }
