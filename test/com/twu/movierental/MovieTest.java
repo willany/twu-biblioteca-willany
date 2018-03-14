@@ -43,5 +43,12 @@ public class MovieTest {
         assertEquals(0, movieWithoutRating.getRating());
     }
 
+    @Test
+    public void validateMovieDetails(){
+        assertEquals("Um amor para recordar     2000                 Nicholas Sparks      10                   \n", movie.details());
+        assertEquals("Ela é o cara              2016                 Steven Robbins       0                    \n", movieWithoutRating.details());
+    }
+    
+
 
 }

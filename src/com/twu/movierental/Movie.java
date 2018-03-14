@@ -58,4 +58,8 @@ public class Movie {
     public void setAvailable(Boolean available) {
         this.available = available;
     }
+
+    public String details() {
+        return String.format("%-25s %-20s %-20s %-20s %n", name, year, director, rating);
+    }
 }
