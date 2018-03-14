@@ -31,7 +31,6 @@ public class MovieManagement {
         }else{
             result = printMovies();
         }
-
         return result;
     }
 
@@ -63,7 +62,7 @@ public class MovieManagement {
 
     public Boolean isAvailable(String movieName){
         Boolean result;
-        Movie movie = getMovieByName(listAllMovies(), movieName);
+        Movie movie = getMovieByName(movieName);
         if(movie != null){
             result = movie.isAvailable();
         }else {
@@ -73,7 +72,7 @@ public class MovieManagement {
     }
 
     public Boolean changeStatus(String movieName, Boolean status){
-        Movie movie = getMovieByName(listAllMovies(), movieName);
+        Movie movie = getMovieByName(movieName);
         if(movie != null) {
             movie.setAvailable(status);
             return true;
@@ -82,9 +81,9 @@ public class MovieManagement {
         }
     }
 
-    public Movie getMovieByName(List<Movie> movies, String name) {
+    public Movie getMovieByName(String name) {
         Movie result = null;
-        for (Movie movie : movies) {
+        for (Movie movie : listAllMovies()) {
             if (name.equals(movie.getName())) {
                 result = movie;
             }
