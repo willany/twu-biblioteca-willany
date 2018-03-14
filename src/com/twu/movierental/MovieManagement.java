@@ -25,7 +25,7 @@ public class MovieManagement {
     }
 
     public String listAll(){
-        String result = "";
+        String result;
         if(listAvailableMovies().isEmpty()){
             result = "No movies available!";
         }else{
@@ -48,6 +48,48 @@ public class MovieManagement {
         }
         String movieLine = String.join("\n", lines);
         return movieLine;
+    }
+
+    public String checkout(String movieName){
+        String result;
+        if(isAvailable(movieName)){
+            result = "Thank you! Enjoy the movie.";
+            changeStatus(movieName, false);
+        }else{
+            result = "That movie is not available.";
+        }
+        return result;
+    }
+
+    public Boolean isAvailable(String movieName){
+        Boolean result;
+        Movie movie = getMovieByName(listAllMovies(), movieName);
+        if(movie != null){
+            result = movie.isAvailable();
+        }else {
+            result = false;
+        }
+        return result;
+    }
+
+    public Boolean changeStatus(String movieName, Boolean status){
+        Movie movie = getMovieByName(listAllMovies(), movieName);
+        if(movie != null) {
+            movie.setAvailable(status);
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public Movie getMovieByName(List<Movie> movies, String name) {
+        Movie result = null;
+        for (Movie movie : movies) {
+            if (name.equals(movie.getName())) {
+                result = movie;
+            }
+        }
+        return result;
     }
 
 }

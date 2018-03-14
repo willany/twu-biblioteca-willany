@@ -52,6 +52,9 @@ public class MovieManagementTest {
     @Test
     public void checkoutOk(){
         String movieName = "Um amor para recordar";
-        assertEquals("Thank you! Enjoy the book.", movieManagement.checkout(movieName));
+        assertEquals("Thank you! Enjoy the movie.", movieManagement.checkout(movieName));
+        assertEquals(false, movieManagement.getMovieByName(movieManagement.listAllMovies(), movie.getName()).isAvailable());
+        assertEquals("That movie is not available.", movieManagement.checkout(movieName));
+        assertEquals("That movie is not available.", movieManagement.checkout("test failed"));
     }
 }
