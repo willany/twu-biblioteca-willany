@@ -27,4 +27,9 @@ public class MovieManagementTest {
         movie.setAvailable(false);
         assertEquals(1, movieManagement.listAvailableMovies().size());
     }
+
+    @Test
+    public void validateLisHeader(){
+        assertEquals("Movie Name                Movie Year           Movie Director      Movie Rating          \n", movieManagement.columnHeadings());
+    }
 }

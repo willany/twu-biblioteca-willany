@@ -20,4 +20,6 @@ public class MovieManagement {
         return listAllMovies().stream().filter(movie -> movie.isAvailable()).collect(Collectors.toList());
     }
 
+
+
 }
