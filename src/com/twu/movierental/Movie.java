@@ -60,6 +60,6 @@ public class Movie {
     }
 
     public String details() {
-        return String.format("%-25s %-20s %-20s %-20s %n", name, year, director, rating);
+        return String.format("%-25s %-20s %-20s %-20s ", name, year, director, rating);
     }
 }

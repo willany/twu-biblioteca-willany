@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c188ad47-aae5-4064-b1e9-7f41ff55ba14" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/twu-biblioteca-willany/com/twu/movierental/MovieManagement.class" afterPath="$PROJECT_DIR$/out/production/twu-biblioteca-willany/com/twu/movierental/MovieManagement.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/twu-biblioteca-willany/com/twu/movierental/MovieManagementTest.class" afterPath="$PROJECT_DIR$/out/test/twu-biblioteca-willany/com/twu/movierental/MovieManagementTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/twu-biblioteca-willany/com/twu/movierental/MovieTest.class" afterPath="$PROJECT_DIR$/out/test/twu-biblioteca-willany/com/twu/movierental/MovieTest.class" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/movierental/Movie.java" afterPath="$PROJECT_DIR$/src/com/twu/movierental/Movie.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/movierental/MovieManagement.java" afterPath="$PROJECT_DIR$/src/com/twu/movierental/MovieManagement.java" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/movierental/MovieManagementTest.java" afterPath="$PROJECT_DIR$/test/com/twu/movierental/MovieManagementTest.java" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/movierental/MovieTest.java" afterPath="$PROJECT_DIR$/test/com/twu/movierental/MovieTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,12 +31,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookManagement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BookManagement.java">
+      <file leaf-file-name="MovieManagementTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/movierental/MovieManagementTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="377">
+              <caret line="47" column="89" lean-forward="false" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/movierental/Movie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+              <folding>
+                <element signature="method#Movie#0;class#Movie#0" expanded="false" />
+                <element signature="method#Movie#1;class#Movie#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,8 +61,8 @@
       <file leaf-file-name="MovieTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/movierental/MovieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="48" column="113" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="113" />
+            <state relative-caret-position="328">
+              <caret line="47" column="111" lean-forward="false" selection-start-line="47" selection-start-column="111" selection-end-line="47" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,25 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieManagementTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/movierental/MovieManagementTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieManagement.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MovieManagement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/movierental/MovieManagement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="283">
+              <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#233#234#0" expanded="true" />
@@ -116,10 +126,10 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BookManagement.java" />
         <option value="$PROJECT_DIR$/resources/ListMovies.feature" />
         <option value="$PROJECT_DIR$/test/com/twu/movierental/Movie.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/movierental/MovieManagementTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/movierental/Movie.java" />
         <option value="$PROJECT_DIR$/test/com/twu/movierental/MovieTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/movierental/MovieManagement.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/movierental/MovieManagementTest.java" />
       </list>
     </option>
   </component>
@@ -291,31 +301,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MovieManagementTest.validateListOfAvailableMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.twu.movierental.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="twu-biblioteca-willany" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.movierental" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.movierental.MovieManagementTest" />
-      <option name="METHOD_NAME" value="validateListOfAvailableMovies" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="MovieManagementTest.validateMovieList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -330,6 +315,31 @@
       <option name="MAIN_CLASS_NAME" value="com.twu.movierental.MovieManagementTest" />
       <option name="METHOD_NAME" value="validateMovieList" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.twu.movierental.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="twu-biblioteca-willany" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.movierental" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.movierental.MovieTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -427,19 +437,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateListOfAvailableMovies" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MovieTest.validateMovieDetails" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateLisHeader" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateListEmpty" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateMovieList" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MovieTest.validateMovieDetails" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateLisHeader" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateListEmpty" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateMovieList" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MovieTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateMovieList" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateListEmpty" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateLisHeader" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MovieTest.validateMovieDetails" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateListOfAvailableMovies" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MovieTest.validateMovieDetails" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MovieTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateLisHeader" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MovieManagementTest.validateListEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -460,39 +470,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MovieManagementTest_validateLisHeader - 2018.03.14 at 10h 48m 30s.xml">
-      <configuration name="MovieManagementTest.validateLisHeader" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateLisHeader - 2018.03.14 at 10h 50m 14s.xml">
-      <configuration name="MovieManagementTest.validateLisHeader" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateLisHeader - 2018.03.14 at 10h 50m 21s.xml">
-      <configuration name="MovieManagementTest.validateLisHeader" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateLisHeader - 2018.03.14 at 10h 50m 29s.xml">
-      <configuration name="MovieManagementTest.validateLisHeader" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateLisHeader - 2018.03.14 at 11h 04m 56s.xml">
-      <configuration name="MovieManagementTest.validateLisHeader" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateLisHeader - 2018.03.14 at 11h 06m 19s.xml">
-      <configuration name="MovieManagementTest.validateLisHeader" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateListEmpty - 2018.03.14 at 11h 21m 07s.xml">
-      <configuration name="MovieManagementTest.validateListEmpty" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateListEmpty - 2018.03.14 at 11h 25m 19s.xml">
-      <configuration name="MovieManagementTest.validateListEmpty" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 33m 50s.xml">
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 42m 01s.xml">
       <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 34m 20s.xml">
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 42m 15s.xml">
       <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 43m 20s.xml">
+      <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 45m 11s.xml">
+      <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 46m 27s.xml">
+      <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 11h 46m 48s.xml">
+      <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 14h 57m 40s.xml">
+      <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieManagementTest_validateMovieList - 2018.03.14 at 15h 00m 16s.xml">
+      <configuration name="MovieManagementTest.validateMovieList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_validateMovieDetails - 2018.03.14 at 11h 46m 13s.xml">
+      <configuration name="MovieTest.validateMovieDetails" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MovieTest_validateMovieDetails - 2018.03.14 at 11h 46m 21s.xml">
+      <configuration name="MovieTest.validateMovieDetails" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -814,6 +825,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BookManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="45" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/ListMovies.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -824,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/movierental/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+        <state relative-caret-position="425">
+          <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
           <folding>
             <element signature="method#Movie#0;class#Movie#0" expanded="false" />
             <element signature="method#Movie#1;class#Movie#0" expanded="false" />
@@ -833,32 +852,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/movierental/MovieManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BookManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/movierental/MovieTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="48" column="113" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="113" />
+        <state relative-caret-position="328">
+          <caret line="47" column="111" lean-forward="false" selection-start-line="47" selection-start-column="111" selection-end-line="47" selection-end-column="111" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -867,12 +864,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/movierental/MovieManagementTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="51" />
+        <state relative-caret-position="377">
+          <caret line="47" column="89" lean-forward="false" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/movierental/MovieManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
           </folding>
         </state>
       </provider>

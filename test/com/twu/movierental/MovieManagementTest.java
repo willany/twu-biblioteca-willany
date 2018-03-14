@@ -32,7 +32,7 @@ public class MovieManagementTest {
 
     @Test
     public void validateLisHeader(){
-        assertEquals("Movie Name                Movie Year           Movie Director       Movie Rating         \n", movieManagement.columnHeadings());
+        assertEquals("Movie Name                Movie Year           Movie Director       Movie Rating         ", movieManagement.columnHeadings());
     }
 
     @Test
@@ -44,8 +44,8 @@ public class MovieManagementTest {
     public void validateMovieList(){
         String expectedHeader = "Movie Name                Movie Year           Movie Director       Movie Rating         ";
         String expectedMovie1 = "Um amor para recordar     2000                 Nicholas Sparks      10                   ";
-        String expectedMovie2 = "Ela é o cara              2016                 Steven Robbins       0                    ";
+        String expectedMovie2 = "Ela é o cara              2018                 Steven Robbins       0                    ";
         String expected = String.join("\n", expectedHeader,expectedMovie1, expectedMovie2);
-        assertEquals(expected, movieManagementEmpty.listAll());
+        assertEquals(expected, movieManagement.listAll());
     }
 }

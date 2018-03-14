@@ -21,16 +21,33 @@ public class MovieManagement {
     }
 
     public String columnHeadings(){
-        return String.format("%-25s %-20s %-20s %-20s %n", "Movie Name", "Movie Year", "Movie Director", "Movie Rating");
+        return String.format("%-25s %-20s %-20s %-20s ", "Movie Name", "Movie Year", "Movie Director", "Movie Rating");
     }
 
     public String listAll(){
         String result = "";
         if(listAvailableMovies().isEmpty()){
             result = "No movies available!";
+        }else{
+            result = printMovies();
         }
 
         return result;
+    }
+
+    public String printMovies(){
+        String header = columnHeadings();
+        String body = printLineMovies();
+        return header + "\n" + body;
+    }
+
+    public String printLineMovies(){
+        List<String> lines = new ArrayList<>();
+        for (Movie movie: listAvailableMovies()) {
+            lines.add(movie.details());
+        }
+        String movieLine = String.join("\n", lines);
+        return movieLine;
     }
 
 }
