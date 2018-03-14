@@ -30,6 +30,6 @@ public class MovieManagementTest {
 
     @Test
     public void validateLisHeader(){
-        assertEquals("Movie Name                Movie Year           Movie Director      Movie Rating          \n", movieManagement.columnHeadings());
+        assertEquals("Movie Name                Movie Year           Movie Director       Movie Rating         \n", movieManagement.columnHeadings());
     }
 }

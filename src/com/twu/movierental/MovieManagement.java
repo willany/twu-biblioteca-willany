@@ -20,6 +20,8 @@ public class MovieManagement {
         return listAllMovies().stream().filter(movie -> movie.isAvailable()).collect(Collectors.toList());
     }
 
-
+    public String columnHeadings(){
+        return String.format("%-25s %-20s %-20s %-20s %n", "Movie Name", "Movie Year", "Movie Director", "Movie Rating");
+    }
 
 }
