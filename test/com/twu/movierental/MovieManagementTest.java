@@ -32,4 +32,9 @@ public class MovieManagementTest {
     public void validateLisHeader(){
         assertEquals("Movie Name                Movie Year           Movie Director       Movie Rating         \n", movieManagement.columnHeadings());
     }
+
+    @Test
+    public void validateListEmpty(){
+        assertEquals("No movies available!", movieManagement.listAll());
+    }
 }
