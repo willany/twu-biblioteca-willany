@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class MovieManagementTest {
 
     MovieManagement movieManagement;
+    MovieManagement movieManagementEmpty;
     Movie movie;
     Movie movieWithoutRating;
 
@@ -19,6 +20,7 @@ public class MovieManagementTest {
         movieManagement = new MovieManagement();
         movieManagement.add(movie);
         movieManagement.add(movieWithoutRating);
+        movieManagementEmpty = new MovieManagement();
     }
 
     @Test
@@ -35,6 +37,6 @@ public class MovieManagementTest {
 
     @Test
     public void validateListEmpty(){
-        assertEquals("No movies available!", movieManagement.listAll());
+        assertEquals("No movies available!", movieManagementEmpty.listAll());
     }
 }

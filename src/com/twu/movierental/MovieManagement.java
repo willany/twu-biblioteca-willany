@@ -24,4 +24,13 @@ public class MovieManagement {
         return String.format("%-25s %-20s %-20s %-20s %n", "Movie Name", "Movie Year", "Movie Director", "Movie Rating");
     }
 
+    public String listAll(){
+        String result = "";
+        if(listAvailableMovies().isEmpty()){
+            result = "No movies available!";
+        }
+
+        return result;
+    }
+
 }
