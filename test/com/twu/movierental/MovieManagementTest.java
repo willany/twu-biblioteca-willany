@@ -48,4 +48,10 @@ public class MovieManagementTest {
         String expected = String.join("\n", expectedHeader,expectedMovie1, expectedMovie2);
         assertEquals(expected, movieManagement.listAll());
     }
+
+    @Test
+    public void checkoutOk(){
+        String movieName = "Um amor para recordar";
+        assertEquals("Thank you! Enjoy the book.", movieManagement.checkout(movieName));
+    }
 }
